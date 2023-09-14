@@ -2,79 +2,107 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body{
+    font-family: 'Montserrat', sans-serif;
     background-color: rgb(101, 168, 207);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.main_container{
-    background-color: rgba(3, 3, 3, 0.315);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 100px;
-}
-.album{
-    border-radius: 10px;
-    width: 400px;
-}
-.spotify{
-    width: 100px;
-    opacity: .7;
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: 10px;
-}
-h1{
-    font-family: 'Montserrat', sans-serif;
-    color: beige;
-    margin-top: 20px;
-}
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    color: beige;
-    opacity: .7;
-}
-audio{
-    margin-bottom: 20px;
 }
 
 header{
-    height: 70px;
+    padding: 0 50px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.068);  
-}
-nav{
-    margin: 0;
+    background-color: rgba(15, 15, 15, 0.048); 
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
 }
 
-nav ul {
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul{
     display: flex;
     list-style-type: none;
 }
 
-.logo-bar{
-    width: 40px;
-}
-nav a {
-    justify-content:center ;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: small;
-    background-color: blueviolet;
-    border-radius: 20px;
-    border-width: 60px;
-    border:0;
+nav a{
     text-decoration: none;
-    width: 60px;
-    margin: 8px;
+    color: aliceblue;
+    padding: 15px;
+    transition: 0.5s ease;
+}
+
+nav a:hover{
+    color: #ffb703;
+}
+
+nav a img{
+    width: 40px;
+    transition: 0.7s;
+}
+
+nav a img:hover{
+    background-color: rgb(0, 187, 62);
+    border-radius: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 70%;
+}
+
+.main_container .album {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.main_container .spotify {
+    width: 18%;
+    opacity: .7;
+    margin-top: 30px;
+    min-width: 60px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: beige;
+    margin-top: 15px;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: beige;
+    opacity: .7;
+    margin-top: -10px;
+}
+audio{
+    width: 40%;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 540px){
+    nav ul{
+        display: none;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        width: 1.3em;
+    }
+
 }
