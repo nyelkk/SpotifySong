@@ -58,7 +58,10 @@ main{
 }
 
 .main_container {
-    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.541);
     border-radius: 10px;
     padding: 20px;
